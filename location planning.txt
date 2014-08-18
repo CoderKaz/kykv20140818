@@ -1,0 +1,37 @@
+locations planning
+
+        island(carribian, mediterrainean, tropical):
+    just relaxing
+oceanside hotel
+inland hotel
+free to live in cave
+
+    tour related
+cave tour
+scuba tour
+fishing tour
+
+        Mountain:
+    relaxing
+
+
+
+    sports
+
+
+
+        countryside:
+    river
+kayak
+
+       lake
+beaches
+
+
+        historic destination
+
+
+
+
+        outer space
+
