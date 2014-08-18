@@ -25,69 +25,58 @@
         <div id="info_box" class="box">
             <p>Sign up with us now!</p>
             <form>
-            <div>First Name:<input type="text" name="fname"><br></div>
-            <div>Last Name:<input type="text" name="lname"><br></div>
-            <div>E-Mail:<input type ="text" name="e_mail"><br></div>
-            <div>Physical Address:<input type ="text" name="physical_address"><br></div>
-            <div>Package(s):<input type ="text" name="packages"><br></div>
+            <div>First Name:<br><input type="text" name="fname"><br></div>
+            <div>Last Name:<br><input type="text" name="lname"><br></div>
+            <div>E-Mail:<br><input type ="text" name="e_mail"><br></div>
+            <div>Physical Address:<br><input type ="text" name="physical_address"><br></div>
+            <div>Package(s):<br><input type ="text" name="packages"><br></div>
             <div><input type="submit" name="Submit"</div>
             
             </form>
         </div>
-        <div class="existBar">
-	<dl class="existModule" id="QuickLinks">
-		<dt class="sectionHead">Existing Customers</dt>
-		<dd>	
-			<form method="post" action="https://secure.newegg.com/NewMyAccount/AccountLogin.aspx" name="loginForm">
-			<span id="CaptchaS" style="position:absolute;left:-999px;"></span>
-			
-			<table width="490" cellspacing="5" cellpadding="0" border="0" align="right" class="formTables">
-				<tbody>
-				<tr>
-					<td width="124" valign="top" align="right"><label for="UserName">KYKV ID:</label></td>
-					<td width="272" align="center"><input type="text" tabindex="5" style="width: 260px;" maxlength="128" size="15" title="Email Address" id="UserName" name="UserName" value=""></td>
-					<td width="74" align="center"></td>
-				</tr>
-				<tr>
-					<td right="center" class="smallerWarning">
-					</td><td align="right" class="smallerWarning"><span class="smallerWarning">(Typically your email address)</span></td>
-					<td align="right" class="smallerWarning">
-				</td></tr>
-				<tr><td colspan="3">&nbsp;</td></tr>
-				<tr>
-					<td align="right"><label for="UserPwd">Password:</label></td>
-					<td width="272" align="right"><input type="password" tabindex="6" style="width: 260px;" maxlength="30" size="17" title="Password" id="UserPwd" name="UserPwd"></td>
-					<td width="74" align="right"></td>
-				</tr>
-				<tr>
-				    <td></td>
-				    <td align="center"><span class="smallerWarning"><a href="space" title="Forgot your password?">Forgot your password?</a></span></td>
-				    <td></td>
-				</tr>
-					<tr>
-						<td align="right" colspan="3">
-							
-						</td>
-					</tr>
-				<tr><td colspan="3">&nbsp;</td></tr>
-				<tr><td height="20" align="center" colspan="3"><input id="submit" type="submit" tabindex="7" value="Submit" class="btnSubmit" name="submit"></td></tr>
-				
-					<tr><td align="center" colspan="3"><input type="checkbox" value="1" id="IsRemember" name="IsRemember" tabindex="8"><label class="desc" for="IsRemember">Remember my KYKV ID</label></td></tr>
-				
-								
-				</tbody>
-			</table>
-			<input type="hidden" name="LoginAppendix" value="SgmdvS3zs5Ofk4S+Kmy3Sq5aqsnJi2KsfefvfE/NDB7y5E3ox9hS6AvacojyIRFk">
-			<input type="hidden" id="hiddenServerDateTimeNow" value="Mon, 18 Aug 2014 20:45:49 GMT">
-			<input type="hidden" id="hiddenAllowClientTimeDiffInMinute" value="10">
-			<script language="javascript">
-              Biz.Shopping.Login.CheckClientTimeDiff();
-            </script>			
-		</form>
-		</dd>
-		<dd class="cll"></dd>
-	</dl>
+<div xmlns="http://www.w3.org/1999/xhtml" class="grid-container wrapper" id="embedded-login"><div class="hide mobile-grid-30 mobile-prefix-20" id="info-wrapper">
+<h2><strong class="info-title"></strong></h2>
+<p class="info-body"></p>
 </div>
+<div class="input-container" id="login-wrapper">
+<form action="" method="post" id="password-form" class=" username-required input-focus">
+<div class="control-group">
+<label id="accountName-label" class="control-label" for="accountName">E-mail Address</label>
+<div class="controls">
+<input aria-labelledby="accountName-label" id="accountName" value="" name="accountName" title="E-mail Address" maxlength="320" type="text" tabindex="1" class="input-block" placeholder="E-mail Address" autofocus="autofocus" />
+</div>
+</div>
+<div class="control-group">
+<label id="password-label" class="control-label" for="password">Enter your Password</label>
+<div class="controls">
+<input aria-labelledby="password-label" id="password" value="" name="password" title="Enter your Password" maxlength="16" type="password" tabindex="1" class="input-block" autocomplete="off" placeholder="Enter your Password" />
+</div>
+</div>
+<div class="control-group">
+<button type="submit" id="submit" class="btn btn-primary btn-block" data-loading-text="" tabindex="1">
+Log In
+</button>
+</div>
+<div class="persistWrapper">
+<label id="persistLogin-label" class="checkbox-label css-label  checked" for="persistLogin">
+<input aria-labelledby="persistLogin-label" id="persistLogin" name="persistLogin" type="checkbox" checked="checked" tabindex="1" />
+<span class="input-checkbox"></span>
+Keep me logged in
+</label>
+</div>
+<div id="help-links">
+<a class="btn btn-block" rel="external" href="http://us.battle.net/account/support/login-support.html" tabindex="1">
+Can’t log in?
+<i class="icon-external-link"></i>
+</a>
+<a class="btn btn-block" rel="external" href="http://us.battle.net/account/creation/tos.html" tabindex="1">
+Need an account?
+<i class="icon-external-link"></i>
+</a>
+</div>
+<input type="hidden" name="csrftoken" value="e077ea32-ad78-4628-acd4-75a8fa112722" />
+</form>
+</div> </div>
 <footer>
     
 </footer>

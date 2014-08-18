@@ -1,6 +1,7 @@
 body
 {
-    background-color: #2c75c9;
+    background: url("https://raw.githubusercontent.com/CoderKaz/kykv20140818/master/images/BTRIOSJU_1724205.jpg"); 
+    background-size: cover;
     font-size: 1.2em;
 }
 h1
@@ -36,14 +37,7 @@ h1
 }
 .page
 {
-    clear: both;
-    text-align: center;
-    margin-left:auto;
-    margin-right:auto;
-    box-shadow: 0.16em 0.16em 0.8em #888888;
-    width:auto;
-    background-image: url("https://raw.githubusercontent.com/CoderKaz/kykv20140818/master/images/imgres.jpg"); 
-    padding: 0.2em;
+    
 }
 .box
 {
@@ -51,7 +45,8 @@ h1
     margin-left:auto;
     margin-right:auto;
     box-shadow: 0.16em 0.16em 0.8em #888888;
-    width:1000px;
-    background-image: url("http://www.zingerbugimages.com/backgrounds/gray_construction_paper_seamless.jpg"); 
+    width: 8.5em;
+    color: yellow;
+    background-color: royalblue; 
     padding: 0.2em;
 }
