@@ -24,10 +24,11 @@
 <header>
                 <ul class="nav nav-pills">
 
-                <li class="active"><a class="directory" href="keepindex.html">Home Page</a></li>
+                <li><a class="directory" href="keepindex.html">Home Page</a></li>
                 <li><a class="directory" href="packages.html" roll="tab" data-toggle="pill">Packages</a></li>
                 <li><a class="directory" href="locations.html">Locations</a></li>
                 <li><a class="directory" href="about.html">About Us</a></li>
+                <li class="active"><a class="directory" href="login.html" roll="tab" data-toggle="pill">login</a></li>
                 <li><a class="directory" href="sign_up.html">Sign Up</a></li>
                 <li><a class="directory" href="testimony.html">Customer Reviews</a></li>
                 <li><a class="directory" href="contact.html">Contact Us</a></li>
@@ -47,26 +48,18 @@
     Existing customer login
 </h1>
 <div id="loginPan">
-	  <ul>
-		  <li class="text12">Secure Access Login</li>
-		  <li id="userField" class="text10"><form name="userid" onsubmit="xferFocus(this); return false;">
-			  <label align="left" for="user" accesskey="u"><b>User Name:&nbsp;</b></label>
-			  <input class="textform" id="user" name="user" tabindex="1" onfocus="hadFocus(true)" type="text" size="15">
-              <br>
-              <a href="http://password.cnm.edu/forms/lookup.html">Find your username</a>
-		  </form>
-          </li>
-		  <li id="passField" class="text10"><form name="cplogin" action="/cp/home/login" onsubmit="login(); return false;" method="post">
-			  <label for="pass" accesskey="p"><b>Password:&nbsp;</b></label>
-			  <input class="textform" id="pass" name="pass" tabindex="2" onfocus="hadFocus(true)" type="password" size="15">
-			  <input type="hidden" name="user" value="">
-			  <input type="hidden" name="uuid" value="">
-              <br>
-              <a href="https://portal.cnm.edu/cp/myqa/answer/start">Forgot your password?</a>
-		  </form></li>
-		  <li class="text10"><input class="btn" accesskey="l" id="login_btn" value="&nbsp;&nbsp;Login&nbsp;&nbsp;" type="button" onclick="login();" tabindex="3">
-		  <input class="btn" accesskey="c" id="cancel_btn" value="Cancel" type="button" onclick="doCancel();" tabindex="4"></li>
-	  </ul>
+    <div id="info_box" class="box">
+            
+            <form>
+                <div class="text12">Secure Access Login</div>
+            <div>:<br><input class="form" type="text" name="fname"><br></div>
+            <div>user Name:<br><input class="form" type="text" name="lname"><br></div>
+            <div>Password:<br><input class="form" type ="text" name="e_mail"><br></div>
+            
+            <div id="login"><input class="form" type="submit" name="Submit"></div><br>
+            </form>
+        </div>
+	  
 	</div>
 <div class="footer">
         <div class="wrapper">
