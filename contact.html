@@ -4,21 +4,43 @@
 <head>
     <meta charset="utf-8" />
     <title>Page Title</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <script src="js/bootstrap.min.js">
+        
+        $('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+        
+        $('#myTab a[href="#profile"]').tab('show') // Select tab by name
+$('#myTab a:first').tab('show') // Select first tab
+$('#myTab a:last').tab('show') // Select last tab
+$('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)
+    </script>
 </head>
 
 <body>
 
         <header>
-                <a class="directory" href="index.html">Home Page</a>
-                <a class="directory" href="packages.html">Packages</a>
-                <a class="directory" href="locations.html">Locations</a>
-                <a class="directory" href="about.html">About Us</a>
-                <a class="directory" href="sign_up.html">Sign Up</a>
-                <a class="directory" href="testimony.html">Customer Reviews</a>
-                <a class="directory" href="contact.html">Contact Us</a>
-                <a class="directory" href="login.html">Log in</a>
+            
+            <ul class="nav nav-pills">
+
+                <li class="active"><a class="directory" href="keepindex.html">Home Page</a></li>
+                <li><a class="directory" href="packages.html" roll="tab" data-toggle="pill">Packages</a></li>
+                <li><a class="directory" href="locations.html">Locations</a></li>
+                <li><a class="directory" href="about.html">About Us</a></li>
+                <li><a class="directory" href="sign_up.html">Sign Up</a></li>
+                <li><a class="directory" href="testimony.html">Customer Reviews</a></li>
+                <li><a class="directory" href="contact.html">Contact Us</a></li>
+                <li><a class="directory" href="login.html">Log in</a></li>
+            </ul>
+            
         </header>
+        
+        
+
+        
 <h1 class="contact">
     Keep Your Kids Vacations
 </h1>
