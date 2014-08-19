@@ -16,11 +16,85 @@
                 <a class="directory" href="sign_up.html">Sign Up</a>
                 <a class="directory" href="testimony.html">Customer Reviews</a>
                 <a class="directory" href="contact.html">Contact Us</a>
+                <a class="directory" href="login.html">Log in</a>
         </header>
 <h1 class="login">
     Existing customer login
 </h1>
+<div id="loginPan">
+	  <ul>
+		  <li class="text12">Secure Access Login</li>
+		  <li id="userField" class="text10"><form name="userid" onsubmit="xferFocus(this); return false;">
+			  <label align="left" for="user" accesskey="u"><b>User Name:&nbsp;</b></label>
+			  <input class="textform" id="user" name="user" tabindex="1" onfocus="hadFocus(true)" type="text" size="15">
+              <br>
+              <a href="http://password.cnm.edu/forms/lookup.html">Find your username</a>
+		  </form>
+          </li>
+		  <li id="passField" class="text10"><form name="cplogin" action="/cp/home/login" onsubmit="login(); return false;" method="post">
+			  <label for="pass" accesskey="p"><b>Password:&nbsp;</b></label>
+			  <input class="textform" id="pass" name="pass" tabindex="2" onfocus="hadFocus(true)" type="password" size="15">
+			  <input type="hidden" name="user" value="">
+			  <input type="hidden" name="uuid" value="">
+              <br>
+              <a href="https://portal.cnm.edu/cp/myqa/answer/start">Forgot your password?</a>
+		  </form></li>
+		  <li class="text10"><input class="btn" accesskey="l" id="login_btn" value="&nbsp;&nbsp;Login&nbsp;&nbsp;" type="button" onclick="login();" tabindex="3">
+		  <input class="btn" accesskey="c" id="cancel_btn" value="Cancel" type="button" onclick="doCancel();" tabindex="4"></li>
+	  </ul>
+	</div>
+<div class="footer">
+        <div class="wrapper">
+            <div class="grid">
+                <div class="row">
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 footer-column">
+                        <h6 class="footer-title">
+                            
+                                Find us on
+                            
+                        </h6>
+                        <ul class="footer-list list-unstyled">
+                            <li class="footer-list-item">
+                                <a href="http://twitter.com/PRTourismCo" target="_blank" class="footer-list-link"><i class="footer-icon footer-icon-twitter"></i> Twitter</a>
+                            </li> <!-- .list-link -->
+                            <li class="footer-list-item">
+                                <a href="http://facebook.com/seepuertorico" target="_blank" class="footer-list-link"><i class="footer-icon footer-icon-facebook"></i> Facebook</a>
+                            </li> <!-- .list-link -->
+                            <li class="footer-list-item">
+                                <a href="http://www.pinterest.com/SeePuertoRico/" target="_blank" class="footer-list-link"><i class="footer-icon footer-icon-pinterest"></i> Pinterest</a>
+                            </li> <!-- .list-link -->
+                        </ul> <!-- .list -->
+                    </div> <!-- .col-3 -->
 
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 footer-column">
+                        <h6 class="footer-title">
+                            
+                                Contact Us
+                            
+                        </h6>
+                        <ul class="footer-list list-unstyled">
+                            <li class="footer-list-item">
+                                <a href="http://messenger.providesupport.com/messenger/eddinc.html" class="footer-list-link" target="_blank">
+                                    
+                                        Live chat
+                                    
+                                </a>
+                            </li> <!-- .list-link -->
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link">1-800-866-7827</a>
+                            </li> <!-- .list-link -->
+                            <li class="footer-list-item">
+                                <a href="http://www.prterewards.com/" target="_blank" class="footer-list-link">Travel Experts</a>
+                            </li> <!-- .list-link -->
+                            <li class="footer-list-item">
+                               
+                    </div> <!-- .col-3 -->
+
+                    
+                </div> <!-- .row -->
+            </div> <!-- .grid -->
+        </div> <!-- .wrapper -->
+    </div>
 
 </body>
 </html>
