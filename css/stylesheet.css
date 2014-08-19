@@ -56,8 +56,22 @@ h6:hover
     margin-left:auto;
     margin-right:auto;
     box-shadow: 0.16em 0.16em 0.8em #888888;
-    width: 8.5em;
+    width: 15em;
     color: yellow;
     background-color: royalblue; 
     padding: 0.2em;
+}
+#submit
+{
+    color: grey;
+}
+.footer
+{
+    background-color: yellow;
+    color: blue;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 0.16em 0.16em 0.8em #888888;
+    width: 15em;
 }
