@@ -2,6 +2,7 @@
 
 <html>
 <head>
+<<<<<<< HEAD
      
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1">  <!--this tag tells your browser to use the actual screensize. this tag you will need, every time you want to make the app mobile friendly-->
@@ -29,21 +30,47 @@
           $('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)
     </script>
 </head>
+=======
+    <title>Packages</title>
 
-<body>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <script src="js/bootstrap.min.js">
+        
+        $('#myCarousel').on('slide.bs.carousel', function ('cycle') {
+            interval: 1500;
+        })
+           
+        $('#myTab a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+        })
+            
+        $('#myTab a[href="#profile"]').tab('show') // Select tab by name
+        $('#myTab a:first').tab('show') // Select first tab
+        $('#myTab a:last').tab('show') // Select last tab
+        $('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)
+    </script>
+>>>>>>> corrected packages page
 
-     <header>
-          <ul class="nav nav-pills">
+</head>
 
+<body class="page">
+
+        <header>
+            <ul class="nav nav-pills">
                 <li><a class="directory" href="keepindex.html">Home Page</a></li>
-                <li class="active"><a class="directory" href="packages.html" roll="tab" data-toggle="pill">Packages</a></li>
+                <li><a class="directory" href="packages.html">Packages</a></li>
                 <li><a class="directory" href="locations.html">Locations</a></li>
                 <li><a class="directory" href="about.html">About Us</a></li>
-                <li><a class="directory" href="sign_up.html">Sign Up</a></li>
+                <li class="active"><a class="directory" href="sign_up.html" roll="tab" data-toggle="pill">Sign Up</a></li>
                 <li><a class="directory" href="testimony.html">Customer Reviews</a></li>
                 <li><a class="directory" href="contact.html">Contact Us</a></li>
                 <li><a class="directory" href="login.html">Log in</a></li>
             </ul>
+<<<<<<< HEAD
      </header>
      
         <h1 class="packages"> Vacation Packages
@@ -107,6 +134,92 @@
      
         
         </footer>
+=======
+        </header>
+        <br>
+        <br>
+<h1 class="box">
+    Vacation Babysitters
+</h1>
+<h5>All your kids be mine!!!</h5>
+<br>
+<br>
+    <br>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/beach/greekisland.jpg" alt="...">
+      <div class="carousel-caption">Island Vacations
+       
+      </div>
+    </div>
+    <div class="item">
+      <img src="imges/historic/castle.jpg" alt="...">
+      <div class="carousel-caption">Historic Trips
+        
+      </div>
+    </div>
+    <div class="item">
+      <img src="imges/country/country1.jpg" alt="...">
+      <div class="carousel-caption"> Country Vacations
+        </div>
+    </div>
+    
+    <div class="item">
+      <img src="imges/mountains/colors1.jpg" alt="...">
+      <div class="carousel-caption">Mountain Vacations
+        
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="imges/sports/horses.jpg" alt="...">
+      <div class="carousel-caption">Sport Vacations
+        
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="imges/tours/tours1.jpg" alt="...">
+      <div class="carousel-caption">Tour Vacations
+        
+      </div>
+    </div>
+ 
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+
+
+footer class="navbar navbar-default navbar-fixed-bottom" role="navigation" role="tablist">
+        <p class="container">
+                <a class="directory-2" href="http://cyfd.org"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIigdHx8kKDQsJCYxJyofLT0iMTU3Ojo6Ix8/RD84QzQ5OjcBCgoKDg0OGxAQGi0lICUuNDQ3Nzc1KzY2Nzc3Nzc0Nzc3LDUsNyw1NzU3LDQsNzQ3Nyw2LjQsLC4rLCwsNCwtN//AABEIADIAMgMBEQACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAACAUGAwQHAf/EADoQAAAFAgEGDAMJAQAAAAAAAAECAwQFABEGEiExc7LRBxMVFzU3UVRWcZKTMkGBIzRCUmGCkbHBFP/EABoBAQACAwEAAAAAAAAAAAAAAAACAwEEBQb/xAAuEQACAgECBAUBCQEAAAAAAAAAAQIDEQQhEjFBUQUiYYHw0TJCcXKRocHh8RP/2gAMAwEAAhEDEQA/AIPhJx9imKxxKsY+ZWQaoqgVNIpCWKGSA9lAVnnPxr4gcegm6gDnPxr4gcegm6gDnPxr4gcegm6gDnPxr4gcegm6gDnPxr4gcegm6gGqYnMqybqKGuc6RTGGwaRCgFV4XOsec1xdgtAU+gJuUjyQqTdBwnlv1kQVPlfCiU2gLfM1s4iPbWpRc9Q3KL8qePxxz9ico8Jig26Ek8RjVgKmdc3FpLh+E46MoPmF/rUtVOVUHbHpzXp9fnqYgsvBoO2yrR0q2XLkqpHEhy9ggNXwnGcVOPJmGsPBgqRgdmM6NaakmyFAKtwudY85ri7BaAhsPQMjOPASjW4qZAgJzjmKXzH/ACtXV6urTQzY8fOxOEHJ7HWsXQzxI4ysPFMnj0xCkUFcuWKYFDSUo5vrpryXh+qrkv8AjdZKMc9Oue75m5ZB/aiiLwazkcQqN5CZiGCbdI5Vm7pNMElBMA30F0h51teI21aVOumyWXs1zX79SNSc95JFX4SYCRZzjyTVa2ZOFbkVINwDz7Brq+DayqdEaVLzJFN8JKWSlV2CgdmM6NaakmyFAKtwudY85ri7BaAxExCtEpRsewUOi1S4tZ1xY2FcxrGG46bWsFvOuY9DG92W2LMnlL06f2W8fDhIsTt7MlxM4gAfnCMmPuyxwE4ETPnDIz/ttXNrp070y1HAuOvnyW677e5a5S4uHOzNeTRnsMnaYSiJEyx3Y8cBkyiQxbiIZIDfMXNe/nVlE9Lq1LW2wxw7d/Xl74MS44eSLMExiZRDE7iPKsLmJMBWq6JxyiHzAUxg7Bvcb/pVmn0ClpVY1ie8k+vdL+DErMTx0KKqXIUOUBuACIV3E8rJrjqxnRrTUk2QrIFW4XOsec1xdgtAVtskk5HJVdAipmAplQHIEPMNH8WqE5Shuo5Xt/nzqZSydCwzIMsOsUzTk0zeEbmy2jVt9schrfm+XlXndbTZqptUVSi2t29l+nU2YSUF5mjbf4pYYkjjqR0ihDywp8WcXWa5L/CVT5edU1eH26SzFkHZXnp3/KSdimtnh/Opzd4zTZnMAvUV1g+H/mMJgv25Vv6r0tdrs+60vX6Gq1gj6uIjsRnRrTUk2QoBVuFzrHnNcXYLQFPoAoAoAoAoB2Yzo1pqSbIUB6dm1VOY6rZE5x0mMmAjooDzk5j3Nv7Rd1AHJzHubf2i7qAOTmPc2/tF3UAcnMe5t/aLuoA5OY9zb+0XdQG1QH//2Q=="/></a>
+                <a class="directory-2" href="http://steampowered.com"><img src="https://raw.githubusercontent.com/CoderKaz/kykv20140818/master/images/globalheader_logo.png"/></a>
+                <a class="directory-2" href="http://www.bop.gov/"><img src="http://profile.ak.fbcdn.net/hprofile-ak-xaf1/t1.0-1/c16.15.193.193/s50x50/198956_203402569689488_5085653_n.jpg"/></a>
+                <a class="directory-2" href="http://www.skype.com/en/"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDQSd9AKr-scPLOZDMrw7ftJwaU16vWejRsDX9oCmYNqyDYTSgFQ"/></a>
+                <a class="directory-2" href="http://twitter.com/PRTourismCo"><img src="http://www.cla.purdue.edu/careers/images/Social%20Media%20Icons/64x64-twitter.png"/></a>
+                <a class="directory-2" href="http://facebook.com/seepuertorico"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKChULDRYbGRcMDRsUHxsWIB0iIiolHyUiKCoiJCYlIB8oLTElMEE3LjQ6Lis0RDcvNykvLjcBCgoKDQwNGg8PGjclHyU2Nzc4Njc3Nyw3Nzc4Nzc1LDg0NDc3NCw0NDQtKzQzNDQrLzQ0MjQ0LzQ0LDQ0NSwsN//AABEIAEAAQAMBIgACEQEDEQH/xAAbAAEAAwEAAwAAAAAAAAAAAAAGAAUHBAECA//EAEEQAAECBAEHBgsFCQAAAAAAAAECAwAEBREGBxITITFRYRZBcZKx0RUiNlRVdKGiwcLTUlOBsvEUMzQ1QnJzg5H/xAAZAQEBAQEBAQAAAAAAAAAAAAADBAIFAQD/xAAjEQACAwABAwQDAAAAAAAAAAABAgADERITMVEEITNhFCIy/9oADAMBAAIRAxEAPwDX69VkUiTDuj0q3FZqEA2zlHjzADWTugc7iOqKUSqorSd0u02lI6M9K1HpjqygPluoSQvsadI6fFHYTBDTcYsprBXYLsdyIeUNT9JTnVY+lE5Q1P0lOdVj6UHtNxiabjC9NfExyPmIeUNT9JTnVY+lE5Q1P0lOdVj6UH9NFrL0KsTDYcakXbH7Vk9pEeFEHcCfAkztRiKpg38JTH+xplQ/EBCT7YWYcrfhVtxqYQht1m2cEG6VJOxSeexts2g3EZ/UabUKa2hyely0FmwupJ1/gYtMDvlVfaSDtlnAegFJHaYOxFKaJpWIbDJlPXo5+QO9tz5YFafjCrLAoomacQbal/CAKZi+3VFHp12oQ7T+5lpp+MTT8YrNNxiabjDcZjY6yeyzc9Xs54BQl2ysA/auAP8Al7xpFUqMtSpJc3OLKUotsFzc7oOYNwk9QJx2adnEPB1nNslBHOD8ItsVUddcpKpJp5LJK0m6k32RzbWV7O/tKkBC/cF40xPT6xJy7cipy6HCTnotqtHwydOZ+JQN0uvtTFRi3DTmGWZdx6cQ+X1EAJQRs/WOrJSsuYncJ83V2iKWVRQePaECeoNndlj/AIindC/ljOI0jLH+/p/9q/ljNob0vxCHd/Znm8ec4x6xIohzZ8EYzdxHPPSbkkhjQs510uFXOBu4xc4uri8P0dU+2wl4hxIspVtsZ7kd/n076ofzphXlW8kl/wCdv4xy7K1F4UD2lasTXsznF+K3cTqli7LJYDAVYJWVXvbui0ySeUznq6u0QIhvkk8pV+rr7RFlyBaSBAQkuCYtx9IS87Nyomm84ZqgLqI1m27ogaqhU9KilUsRbetXfGr1ult1WULK9R5iOYwScw3X0HMbVLPAbC4kE2iGq/iuSh69Owp4Ep3m/vq74ngSneb++rvhRydxF93I9RMTk7iL7uR6iYX8keZjpfUmTyQlZOrvql2swqlzfxif6k7zF9jyXamaDon05wLydVyN+6KeWo+KZVZXLGUaJFrpSkao+kxTsXTTejmHZZwXvZQSdcCzg2c9iBcXINFDpxNhLe+rvhPgimSsjXAZZrMIZVneMTttq1nhHujDuISbH9kbvzoSAfZCfD1ERSWTnKz1r2kxqy/kuAzK14dn/9k="/></a>
+                
+        </p>
+    </footer>
+>>>>>>> corrected packages page
 
 </body>
 </html>
